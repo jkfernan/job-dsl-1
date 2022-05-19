@@ -6,7 +6,7 @@ import hudson.EnvVars
 import hudson.FilePath
 
 // the folder where you can find the job dsl scripts and classes
-String jobDslRoot = "/config/job-dsl"
+String jobDslRoot = System.getenv("JOB_DSL_ROOT")
 
 def workspace = new File(jobDslRoot)
 def jobManagement = new JenkinsJobManagement(System.out, [:], workspace)

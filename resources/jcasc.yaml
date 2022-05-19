@@ -1,0 +1,6 @@
+groovy:
+  # plugin doesn't support env variable expansion
+  # TODO: 
+  # 1. fix https://github.com/jenkinsci/configuration-as-code-groovy-plugin/pull/3
+  # 2. then, make this ${CASC_JENKINS_CONFIG}/init.groovy   
+  - file: /var/jenkins_home/casc_configs/init.groovy
